@@ -21,28 +21,28 @@ const TestimonialsCarousel = () => {
       <>
         <img src={avatar1} alt="John Doe 1" />
         <div className="myCarousel">
-          <h3>Reviews</h3>
+          <h3></h3>
           <p></p>
         </div>
       </>
       <>
         <img src={avatar2} alt="Jane Doe 2" />
         <div className="myCarousel">
-          <h3>Reviews</h3>
+          <h3></h3>
           <p></p>
         </div>
       </>
       <>
         <img src={avatar3} alt="John Doe 3" />
         <div className="myCarousel">
-          <h3>Reviews</h3>
+          <h3></h3>
           <p></p>
         </div>
       </>
       <>
         <img src={avatar4} alt="John Doe 4" />
         <div className="myCarousel">
-          <h3>Reviews</h3>
+          <h3></h3>
           <p></p>
         </div>
       </>
