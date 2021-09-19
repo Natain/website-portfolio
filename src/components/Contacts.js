@@ -37,8 +37,8 @@ const Contacts = () => {
   return (
     <div id="contacts" className="contacts">
       <div className="text-center">
-        <h1>Contact me & Let's Work Together</h1>
-        <p> I'm interested in full-time permanent jobs, but if you have other questions or have a project you'd like to discuss, just contact me by using the form below or the other contact ways.</p>
+        <h1>Contact me</h1>
+        <p> Please fill out the form and describe you project needs and I'll contact you as soon as possible.</p>
         <span className="success-message">{successMessage}</span>
       </div>
       <div className="container">
