@@ -1,8 +1,8 @@
 import React from "react";
-import netflix from "../images/netflix.png";
-import cityGuide from "../images/city-guide-app.png";
-import portfolio from "../images/portfolio.png";
-import taskManager from "../images/task-manager.png";
+import Gitscores from "../images/Gitscores.png";
+import LinxChat from "../images/LinxChat.png";
+import PythonGame from "../images/PythonGame.png";
+import website from "../images/website.png";
 // FONTAWESOME IMPORTS
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearchPlus } from "@fortawesome/free-solid-svg-icons";
@@ -14,45 +14,48 @@ import "react-popupbox/dist/react-popupbox.css";
 
 const Pofrfolio = () => {
 
-  // Netflix
-  const openPopupboxNetflix = () => {
+  // Gitscores
+  const openPopupboxGitscores = () => {
     const content = (
       <>
-        <img className="portfolio-image-popupbox" src={netflix} alt="Netflix Clone Project..." />
-        <p>In Progress...</p>
-        <b>GitHub:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/Natain")}>https://github.com/Natain</a>
+        <img className="portfolio-image-popupbox" src={Gitscores} alt="Gitscores " />
+        <b/>
+        <p></p>
+        <b>Demo:</b> <a className="hyper-link" onClick={() => window.open("https://gitscores.herokuapp.com/")}>https://gitscores.herokuapp.com/</a>
+        <br/>
+        <b>GitHub:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/Natain/gitscores")}>https://github.com/Natain/gitscores</a>
       </>
     )
     PopupboxManager.open({ content })
   }
 
-  const popupboxConfigNetflix = {
+  const popupboxConfigGitscores = {
     titleBar: {
       enable: true,
-      text: "Netflix clone project."
+      text: "Gitscores clone project."
     },
     fadeIn: true,
     fadeInSpeed: 500
   }
 
   // City Guide App
-  const openPopupboxCityGuide = () => {
+  const openPopupboxLinxChat = () => {
     const content = (
       <>
-        <img className="portfolio-image-popupbox" src={cityGuide} alt="City Guide App Project..." />
-        <p>In Progress...</p>
-        <b>Demo:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/Natain/", "_blank")}>https://github.com/Natain</a>
+        <img className="portfolio-image-popupbox" src={LinxChat} alt="City Guide App Project..." />
+        <p></p>
+
         <br />
-        <b>GitHub:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/Natain", "_blank")}>https://github.com/Natain</a>
+        <b>GitHub:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/Natain/LinxChat", "_blank")}>https://github.com/Natain/LinxChat</a>
       </>
     )
     PopupboxManager.open({ content })
   }
 
-  const popupboxConfigCityGuide = {
+  const popupboxConfigLinxChat = {
     titleBar: {
       enable: true,
-      text: "Project Name: .......  "
+      text: " "
     },
     fadeIn: true,
     fadeInSpeed: 500
@@ -62,43 +65,43 @@ const Pofrfolio = () => {
   const openPopupboxPortfolio = () => {
     const content = (
       <>
-        <img className="portfolio-image-popupbox" src={portfolio} alt="Portfolio Project..." />
-        <p>In Progress...</p>
-        <b>Demo:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/Natain", "_blank")}>https://github.com/Natain</a>
+        <img className="portfolio-image-popupbox" src={PythonGame} alt="Portfolio Project..." />
+        <p></p>
+
         <br />
-        <b>GitHub:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/Natain", "_blank")}>https://github.com/Natain</a>
+        <b>GitHub:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/Natain/Racing-Cars-Python", "_blank")}>https://github.com/Natain/Racing-Cars-Python</a>
       </>
     )
     PopupboxManager.open({ content })
   }
 
-  const popupboxConfigPortfolio = {
+  const popupboxConfigPythonGame = {
     titleBar: {
       enable: true,
-      text: "Project Name: .......  "
+      text: " "
     },
     fadeIn: true,
     fadeInSpeed: 500
   }
 
   // Task Manager React and Redux Project
-  const openPopupboxTaskManager = () => {
+  const openPopupboxwebsite = () => {
     const content = (
       <>
-        <img className="portfolio-image-popupbox" src={taskManager} alt="Task Manager React and Redux Project..." />
-        <p>In Progress</p>
-        <b>Demo:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/Natain", "_blank")}>https://github.com/Natain</a>
+        <img className="portfolio-image-popupbox" src={website} alt="Task Manager React and Redux Project..." />
+        <p></p>
+
         <br />
-        <b>GitHub:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/Natain", "_blank")}>https://github.com/Natain</a>
+        <b>GitHub:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/Natain/website-portfolio", "_blank")}>https://github.com/Natain/website-portfolio</a>
       </>
     )
     PopupboxManager.open({ content })
   }
 
-  const popupboxConfigTaskManager = {
+  const popupboxConfigwebsite = {
     titleBar: {
       enable: true,
-      text: "Project Name: .......  "
+      text: " "
     },
     fadeIn: true,
     fadeInSpeed: 500
@@ -110,35 +113,35 @@ const Pofrfolio = () => {
       <div className="container">
         <h1 className="text-uppercase text-center py-5">portfolio</h1>
         <div className="image-box-wrapper row justify-content-center">
-          <div className="portfolio-image-box" onClick={openPopupboxNetflix}>
-            <img className="portfolio-image" src={netflix} alt="Netflix Clone Project..." />
+          <div className="portfolio-image-box" onClick={openPopupboxGitscores}>
+            <img className="portfolio-image" src={Gitscores} alt="Gitscores " />
             <div className="overflow"></div>
             <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
           </div>
           {/* - */}
-          <div className="portfolio-image-box" onClick={openPopupboxCityGuide}>
-            <img className="portfolio-image" src={cityGuide} alt="City Guide Project..." />
+          <div className="portfolio-image-box" onClick={openPopupboxLinxChat}>
+            <img className="portfolio-image" src={LinxChat} alt="City Guide Project..." />
             <div className="overflow"></div>
             <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
           </div>
           {/* - */}
           <div className="portfolio-image-box" onClick={openPopupboxPortfolio}>
-            <img className="portfolio-image" src={portfolio} alt="Portfolio React and Material UI Project..." />
+            <img className="portfolio-image" src={PythonGame} alt="Portfolio React and Material UI Project..." />
             <div className="overflow"></div>
             <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
           </div>
           {/* - */}
-          <div className="portfolio-image-box" onClick={openPopupboxTaskManager}>
-            <img className="portfolio-image" src={taskManager} alt="Task Manager React and Redux Project..." />
+          <div className="portfolio-image-box" onClick={openPopupboxwebsite}>
+            <img className="portfolio-image" src={website} alt="Task Manager React and Redux Project..." />
             <div className="overflow"></div>
             <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
           </div>
         </div>
       </div>
-      <PopupboxContainer {...popupboxConfigNetflix} />
-      <PopupboxContainer {...popupboxConfigCityGuide} />
-      <PopupboxContainer {...popupboxConfigPortfolio} />
-      <PopupboxContainer {...popupboxConfigTaskManager} />
+      <PopupboxContainer {...popupboxConfigGitscores} />
+      <PopupboxContainer {...popupboxConfigLinxChat} />
+      <PopupboxContainer {...popupboxConfigPythonGame} />
+      <PopupboxContainer {...popupboxConfigwebsite} />
     </div>
   )
 }
